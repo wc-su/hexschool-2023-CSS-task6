@@ -1,0 +1,31 @@
+.custom-tag {
+  @extend .fs-11;
+  @extend .fs-lg-6;
+  @extend .border;
+  @extend .border-black;
+  @extend .rounded-0;
+  @extend .font-family-sub-title;
+  @extend .fw-bold;
+  @extend .py-1;
+  @extend .px-3;
+  @extend .px-lg-4;
+  cursor: pointer;
+  position: relative;
+  &::before {
+    content: "";
+    @extend .d-block;
+    @extend .bg-black;
+    width: 4px;
+    height: calc(100% + 2px);
+    @extend .position-absolute;
+    top: -1px;
+    left: -1px;
+  }
+  &:hover {
+    @extend .text-white;
+    @extend .bg-black;
+  }
+  &:hover::before {
+    @extend .bg-secondary;
+  }
+}

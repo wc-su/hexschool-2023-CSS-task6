@@ -1,0 +1,129 @@
+.custom-card-header {
+  @extend .fs-2;
+  @extend .fs-lg-9;
+  @extend .pb-9;
+  @extend .border-bottom;
+  @extend .border-3;
+  @extend .border-primary;
+  @extend .mb-3;
+  @extend .mb-lg-9;
+}
+.custom-card-img {
+  @extend .w-100;
+  height: 210px;
+  @extend .object-fit-cover;
+  @extend .mb-2;
+  @extend .mb-lg-9;
+  @include media-breakpoint-up(lg) {
+    height: 255px;
+  }
+}
+.custom-card-title {
+  @extend .font-family-sub-title;
+  @extend .fw-bold;
+  @extend .fs-7;
+  @extend .fs-lg-4;
+  @extend .mb-2;
+  @extend .mb-lg-9;
+}
+.custom-card-footer {
+  @extend .d-flex;
+  @extend .justify-content-between;
+  @extend .align-items-center;
+  @extend .py-2;
+  @extend .py-lg-9;
+  @extend .border-top;
+  @extend .border-bottom;
+  @extend .border-2;
+  @extend .border-primary;
+}
+.custom-card-cate {
+  @extend .text-decoration-none;
+  &:hover span {
+    @extend .text-decoration-underline;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    @extend .align-top;
+    @include media-breakpoint-up(lg) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  span {
+    @extend .font-family-sub-title;
+    @extend .fw-bold;
+  }
+}
+.custom-card-link {
+  @extend .text-decoration-none;
+  @extend .position-relative;
+  &:hover::before {
+    content: "";
+    @extend .d-block;
+    @extend .bg-secondary;
+    width: 29px;
+    height: 29px;
+    @extend .rounded-circle;
+    @extend .position-absolute;
+    top: -3px;
+    left: -10px;
+    z-index: -1;
+  }
+  span {
+    @extend .fw-bold;
+  }
+}
+
+.custom-album-card {
+  @extend .d-inline-block;
+  @extend .text-center;
+  @extend .border;
+  @extend .border-primary;
+  @extend .border-2;
+  @extend .p-3;
+  @extend .position-relative;
+  height: 380px;
+  &.rotate-2 {
+    transform: rotate(2deg);
+  }
+  &.rotate-n2 {
+    transform: rotate(-2deg);
+  }
+}
+.custom-album-card-img {
+  width: 267px;
+  height: 267px;
+  @extend .object-fit-cover;
+  @extend .img-fluid;
+  @extend .mb-3;
+  @include media-breakpoint-up(lg) {
+    width: 274px;
+    height: 274px;
+  }
+}
+.custom-album-card-text {
+  @extend .text-start;
+  @extend .fs-7;
+  @extend .fw-bold;
+  @extend .font-family-sub-title;
+  @extend .m-0;
+}
+.custom-album-card-tag {
+  @extend .text-black;
+  @extend .font-family-sub-title;
+  @extend .fw-bold;
+  @extend .bg-white;
+  @extend .position-absolute;
+  @extend .top-0;
+  @extend .start-50;
+  @extend .px-3;
+  @extend .py-2;
+  &.rotate-n3 {
+    transform: translate(-50%, -50%) rotate(-3deg);
+  }
+  &.rotate-n4 {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+}

@@ -1,0 +1,19 @@
+.custom-btn {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .text-white;
+  // @extend .fs-6;
+  // @extend .fs-lg-11;
+  // @extend .fs-lg-5;
+  @extend .rounded-0;
+  // @extend .py-3;
+  // @extend .py-lg-2;
+}
+.custom-btn:hover {
+  @extend .text-secondary;
+}
+.custom-btn:disabled {
+  color: #ebeae3;
+  background-color: #9a9a9a;
+  border-color: #9a9a9a;
+}

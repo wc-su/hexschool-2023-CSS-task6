@@ -1,6 +1,11 @@
+.custom-card {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .h-100;
+}
 .custom-card-header {
   @extend .fs-2;
-  @extend .fs-lg-9;
+  @extend .fs-xl-9;
   @extend .pb-9;
   @extend .border-bottom;
   @extend .border-3;
@@ -27,6 +32,7 @@
   @extend .mb-lg-9;
 }
 .custom-card-footer {
+  @extend .mt-auto;
   @extend .d-flex;
   @extend .justify-content-between;
   @extend .align-items-center;

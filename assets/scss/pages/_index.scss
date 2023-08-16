@@ -71,3 +71,10 @@
   @extend .w-100;
   @extend .bg-primary;
 }
+
+.login-modal .modal-dialog {
+  max-width: 351px;
+  @include media-breakpoint-up(lg) {
+    max-width: 636px;
+  }
+}

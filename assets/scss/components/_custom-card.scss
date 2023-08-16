@@ -44,7 +44,6 @@
   @extend .border-primary;
 }
 .custom-card-cate {
-  @extend .text-decoration-none;
   &:hover span {
     @extend .text-decoration-underline;
   }
@@ -63,7 +62,6 @@
   }
 }
 .custom-card-link {
-  @extend .text-decoration-none;
   @extend .position-relative;
   &:hover::before {
     content: "";

@@ -10,7 +10,8 @@
   @extend .px-3;
   @extend .px-lg-4;
   cursor: pointer;
-  position: relative;
+  @extend .position-relative;
+  transition: .6s;
   &::before {
     content: "";
     @extend .d-block;
@@ -23,7 +24,7 @@
   }
   &:hover {
     @extend .text-white;
-    @extend .bg-black;
+    box-shadow: inset 6rem 0 0 0 $black;
   }
   &:hover::before {
     @extend .bg-secondary;

@@ -1,10 +1,5 @@
-.custom-btn {
-  @extend .btn;
-  @extend .btn-primary;
-  @extend .text-white;
-}
 .custom-btn:hover {
-  @extend .text-secondary;
+  color: $secondary !important;
 }
 .custom-btn:disabled {
   color: #ebeae3;

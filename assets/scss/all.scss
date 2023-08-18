@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap");
-@import "../icofont/icofont.min.css";
+@import "vendors/icofont/icofont.min.css";
 
-@import "../scss/font";
+@import "base/font";
 
 // BS Configuration
 @import "~bootstrap/scss/functions";
 
 // custom variables
-@import "variables";
+@import "base/variables";
 
 @import "~bootstrap/scss/variables-dark";
 @import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/mixins";
-
 @import "~bootstrap/scss/utilities";
+
 // BS layout & components
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
@@ -30,17 +30,18 @@
 @import "~bootstrap/scss/modal";
 @import "~bootstrap/scss/carousel";
 
-@import "../scss/utilities";
+@import "utils/utilities";
 
 // BS Helpers
 @import "~bootstrap/scss/helpers";
 // BS Utilities
 @import "~bootstrap/scss/utilities/api";
 
-@import "../scss/components/custom-card";
-@import "../scss/components/custom-btn";
-@import "../scss/components/custom-tag";
+@import "components/custom-card";
+@import "components/custom-btn";
+@import "components/custom-tag";
 
-@import "./pages/nav";
-@import "./pages/index";
-@import "./pages/login";
+@import "layout/nav";
+
+@import "pages/index";
+@import "pages/login";

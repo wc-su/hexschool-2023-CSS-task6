@@ -7,9 +7,11 @@
     <title>7TAO | 登入</title>
   </head>
   <body>
-    <%- include('./layout/nav'); %>
-    <%- include('./layout/login'); %>
-    <%-include('./layout/footer'); %>
+    <div class="d-flex flex-column vh-100">
+      <%- include('./layout/nav'); %>
+      <%- include('./layout/login', {page: "login"}); %>
+      <%- include('./layout/footer'); %>
+    </div>
 
     <script type="module" src="../main.js"></script>
   </body>

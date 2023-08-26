@@ -1,8 +1,5 @@
 .header img {
-  width: 100%;
   height: 350px;
-  @extend .object-fit-cover;
-  @extend .position-relative;
   @include media-breakpoint-up(lg) {
     height: 518px;
   }
@@ -11,19 +8,12 @@
   width: 10%;
 }
 .carousel-title {
-  @extend .position-absolute;
   top: map-get($spacers, 3);
   left: map-get($spacers, 7);
   @include media-breakpoint-up(lg) {
     top: map-get($spacers, 5);
     left: map-get($spacers, 5);
   }
-}
-.carousel-sub-title {
-  @extend .position-absolute;
-  @extend .bottom-0;
-  @extend .start-50;
-  @extend .translate-middle-x;
 }
 
 .cate-img {
@@ -35,14 +25,14 @@
   }
 }
 .cate-link:hover {
-  @extend .text-tertiary;
+  color: $tertiary;
   .cate-img {
     filter: invert(53%) sepia(18%) saturate(1620%) hue-rotate(313deg)
       brightness(86%) contrast(81%);
   }
 }
 .cate-link-more:hover {
-  @extend .text-tertiary;
+  color: $tertiary !important;
 }
 
 .online-img {
@@ -55,21 +45,21 @@
 
 .contact-link::before {
   content: "";
-  @extend .d-block;
+  display: block;
   width: 0%;
   height: 100%;
-  @extend .position-absolute;
+  position: absolute;
   top: 1.5px;
-  @extend .start-0;
-  @extend .z-n1;
+  top: 0;
+  z-index: -1;
   transition: 0.8s;
 }
 .contact-link:hover {
-  @extend .text-white;
+  color: $white;
 }
 .contact-link:hover::before {
-  @extend .w-100;
-  @extend .bg-primary;
+  width: 100%;
+  background-color: $primary;
 }
 
 .login-modal .modal-dialog {
